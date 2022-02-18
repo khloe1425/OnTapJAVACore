@@ -1,19 +1,20 @@
 package ontapjavacore;
 
 public class Cau02 {
-	public static void main(String[] args) {
-		
-		if(packageRiceBag(5, 4, 25) == true) {
-			System.out.println("Đóng gói gạo thành công");
-		} else {
-			System.out.println("Đóng gói gạo thất bại!");
-		}
 
+	public static void main(String[] args) {
+		System.out.println(isPalindrome("abcdedcba"));
+		System.out.println(isPalindrome("notpalindrome"));
 	}
 	
-	public static boolean packageRiceBag(int smallBagAmount, int bigBagAmount, int goal) {
-		if((smallBagAmount + bigBagAmount * 5) == goal)
-			return true;
-		return false;
+	public static boolean isPalindrome(String inputStr) {
+		int len = inputStr.length();
+		for(int i = 0; i < len/2; i++) {
+			if(inputStr.charAt(i) != inputStr.charAt(len-i-1)) {
+				return false;
+			}
+		}
+		return true;
 	}
+
 }
