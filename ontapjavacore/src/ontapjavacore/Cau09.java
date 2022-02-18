@@ -3,7 +3,7 @@ package ontapjavacore;
 public class Cau09 {
 
 	public static void main(String[] args) {
-		System.out.println("Tính Tính S(n) = 1/1×2 + 1/2×3 +…+ 1/n x (n + 1) = " + tong(5));
+		System.out.println("Tính S(n) = 1/1×2 + 1/2×3 +…+ 1/n x (n + 1) = " + tong(5));
 	}
 
 	public static double tong(int n) {
